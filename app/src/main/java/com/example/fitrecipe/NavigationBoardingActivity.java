@@ -42,7 +42,7 @@ public class NavigationBoardingActivity extends AppCompatActivity {
             if (position == 2){
                 nextButton.setText("Finish");
             } else {
-                nextButton.setText("Next");
+                nextButton.setText("Tiếp");
             }
         }
         @Override
@@ -70,7 +70,7 @@ public class NavigationBoardingActivity extends AppCompatActivity {
                 if (getItem(0) < 2)
                     slideViewPager.setCurrentItem(getItem(1), true);
                 else {
-                    Intent i = new Intent(NavigationBoardingActivity.this, OnboardingScreen2.class);
+                    Intent i = new Intent(NavigationBoardingActivity.this, Activity_auth.class);
                     startActivity(i);
                     finish();
                 }
@@ -79,7 +79,7 @@ public class NavigationBoardingActivity extends AppCompatActivity {
         skipButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NavigationBoardingActivity.this, MainActivity.class);
+                Intent i = new Intent(NavigationBoardingActivity.this, Activity_auth.class);
                 startActivity(i);
                 finish();
             }

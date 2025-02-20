@@ -9,9 +9,9 @@
     <string name="onboarding3">Bắt đầu hành trình ăn kiêng thông minh ngay hôm nay!</string>
 
 
-        <string name="screen1">Chào mừng đến với FitRecipe</string>
-        <string name="screen2">Khám phá Thực Đơn</string>
-        <string name="screen3">Bắt Đầu Hành Trình</string>
+    <string name="screen1">Chào mừng đến với FitRecipe</string>
+    <string name="screen2">Khám phá Thực Đơn</string>
+    <string name="screen3">Bắt Đầu Hành Trình</string>
     <string name="screen1desc">Khám phá các công thức ăn kiêng giúp bạn duy trì sức khỏe và cân nặng lý tưởng.</string>
     <string name="screen2desc">Tìm kiếm, lựa chọn và lưu lại những thực đơn dinh dưỡng được thiết kế khoa học, phù hợp với nhu cầu của bạn.</string>
     <string name="screen3desc">Theo dõi tiến trình và nhận gợi ý từ chuyên gia dinh dưỡng để cải thiện chất lượng cuộc sống.</string>

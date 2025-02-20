@@ -69,7 +69,6 @@ public class NavigationBoardingActivity extends AppCompatActivity {
                 if (getItem(0) < 2)
                     slideViewPager.setCurrentItem(getItem(1), true);
                 else {
-                    Intent i = new Intent(NavigationBoardingActivity.this, OnboardingScreen2.class);
                     startActivity(i);
                     finish();
                 }
@@ -78,7 +77,6 @@ public class NavigationBoardingActivity extends AppCompatActivity {
         skipButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(NavigationBoardingActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();
             }

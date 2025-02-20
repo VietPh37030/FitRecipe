@@ -12,30 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitRecipe"
         tools:targetApi="31">
-
-
+        <activity
+            android:name=".Authen.Activity_auth"
+            android:exported="false" />
         <activity
             android:name=".Screen.OnBoardingActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".Screen.OnboardingScreen2"
-            android:exported="false" />
-        <activity
-            android:name=".NavigationBoardingActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

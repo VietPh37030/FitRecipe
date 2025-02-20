@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">FitRecipe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chao">Chào mừng bạn đến với FitRecipe</string>
+    <string name="onboarding1"> Người bạn đồng hành cho chế độ ăn kiêng lành mạnh!
+    Khám phá thực đơn phù hợp với mục tiêu sức khỏe của bạn</string>
+    <string name="onboarding2">Dễ dàng lên kế hoạch bữa ăn, theo dõi lượng calo và đạt được mục tiêu cân nặng của bạn.</string>
+    <string name="onboarding3">Bắt đầu hành trình ăn kiêng thông minh ngay hôm nay!</string>
+
+
+        <string name="screen1">Chào mừng đến với FitRecipe</string>
+        <string name="screen2">Khám phá Thực Đơn</string>
+        <string name="screen3">Bắt Đầu Hành Trình</string>
+    <string name="screen1desc">Khám phá các công thức ăn kiêng giúp bạn duy trì sức khỏe và cân nặng lý tưởng.</string>
+    <string name="screen2desc">Tìm kiếm, lựa chọn và lưu lại những thực đơn dinh dưỡng được thiết kế khoa học, phù hợp với nhu cầu của bạn.</string>
+    <string name="screen3desc">Theo dõi tiến trình và nhận gợi ý từ chuyên gia dinh dưỡng để cải thiện chất lượng cuộc sống.</string>
+
+    <string name="startDesc">Bắt đầu hành trình ăn kiêng lành mạnh với FitRecipe: lên kế hoạch, lựa chọn thực đơn và theo dõi kết quả để đạt được sức khỏe tối ưu.</string>
 </resources>

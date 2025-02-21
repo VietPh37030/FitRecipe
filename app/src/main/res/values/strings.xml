@@ -3,10 +3,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="chao">Chào mừng bạn đến với FitRecipe</string>
-    <string name="onboarding1"> Người bạn đồng hành cho chế độ ăn kiêng lành mạnh!
-    Khám phá thực đơn phù hợp với mục tiêu sức khỏe của bạn</string>
-    <string name="onboarding2">Dễ dàng lên kế hoạch bữa ăn, theo dõi lượng calo và đạt được mục tiêu cân nặng của bạn.</string>
-    <string name="onboarding3">Bắt đầu hành trình ăn kiêng thông minh ngay hôm nay!</string>
+    <string name="terms_text">Bằng cách đăng ký, bạn đồng ý với
+    <font color="#1E3A1E"><u>Điều khoản dịch vụ</u></font> và
+    <font color="#1E3A1E"><u>Chính sách quyền riêng tư</u></font>
+</string>
+
 
 
     <string name="screen1">Chào mừng đến với FitRecipe</string>

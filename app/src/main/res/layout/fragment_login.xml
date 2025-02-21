@@ -3,29 +3,202 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AuthenFragment.LoginFragment">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="20dp">
 
-        <EditText
+        <LinearLayout
+            android:id="@+id/google_sign_in_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your email"/>
+            android:background="@drawable/btn_social"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-        <EditText
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/google" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập với Google"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/facebook_sign_in_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your password"
-            android:inputType="textPassword"/>
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_social"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/facebook" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đăng nhập với Facebook"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!--Tạo đường kẻ-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="hoặc có thể đăng nhập bằng Email" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@color/black" />
+        </LinearLayout>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_textnav"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Icon email -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/mail" />
+
+            <!-- Trường nhập email -->
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Nhập email của bạn"
+
+                android:inputType="textEmailAddress" /> <!-- Loại bỏ background mặc định của EditText -->
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_textnav"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Icon email -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/password" />
+
+            <!-- Trường nhập email -->
+            <EditText
+                android:id="@+id/passEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Nhập mật khẩu của bạn"
+
+                android:inputType="textPassword" /> <!-- Loại bỏ background mặc định của EditText -->
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/eyeon" />
+        </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Quên mật khẩu"
+    android:layout_marginTop="10dp"
+    android:id="@+id/fogottxt"
+    android:elevation="0.5dp"
+    android:layout_marginBottom="25dp"
+    />
 
         <Button
+            android:id="@+id/customButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"/>
+            android:background="@drawable/btn_customxanhla"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Đăng nhập"
+            android:textColor="#1E3A1E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            android:foreground="?attr/selectableItemBackground"
+            />
+
+        <TextView
+            android:id="@+id/tv_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_text"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:lineSpacingExtra="2dp"
+            android:textStyle="normal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:autoLink="web"/>
     </LinearLayout>
 
 

@@ -3,34 +3,268 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AuthenFragment.SignUpFragment">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_weight="1"
         android:padding="20dp">
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your name"/>
+            android:layout_marginTop="25dp"
+            android:background="@drawable/edit_textnav"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
 
-        <EditText
+            android:padding="16dp">
+
+            <!-- Icon email -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/person" />
+
+            <!-- Trường nhập email -->
+            <EditText
+                android:id="@+id/namelEditTextSignup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Nhập tên của bạn"
+
+                android:inputType="text" /> <!-- Loại bỏ background mặc định của EditText -->
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/errorFullName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your email"/>
+            android:text="Họ tên không được chứa ký tự đặc biệt"
+            android:textColor="@color/maudo"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:paddingTop="4dp" />
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your password"
-            android:inputType="textPassword"/>
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_textnav"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
+            <!-- Icon email -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/mail" />
+
+            <!-- Trường nhập email -->
+            <EditText
+                android:id="@+id/emailEditTextSignup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Nhập email của bạn"
+
+                android:inputType="textEmailAddress" /> <!-- Loại bỏ background mặc định của EditText -->
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/errorEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email không hợp lệ"
+            android:textColor="@color/maudo"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:paddingTop="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_textnav"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Icon email -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/password" />
+
+            <!-- Trường nhập email -->
+            <EditText
+                android:id="@+id/passEditTextSignup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Nhập password của bạn"
+
+                android:inputType="textPassword" /> <!-- Loại bỏ background mặc định của EditText -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/eyeon" />
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_textnav"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <!-- Icon email -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/password" />
+
+            <!-- Trường nhập email -->
+            <EditText
+                android:id="@+id/confimpassEditTextSignup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Nhập lại password của bạn"
+
+                android:inputType="textEmailAddress" /> <!-- Loại bỏ background mặc định của EditText -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/eyeon" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/errorConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mật khẩu nhập lại không khớp"
+            android:textColor="@color/maudo"
+            android:textSize="14sp"
+            android:visibility="gone"
+            android:paddingTop="4dp"
+            android:layout_marginBottom="5dp"/>
+
+        <!--        validated cac thuoc tinh-->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginTop="5dp"
+       android:layout_marginHorizontal="3dp"
+       android:orientation="horizontal">
+       <ImageView
+           android:layout_width="24dp"
+           android:layout_height="24dp"
+           android:src="@drawable/nopass"
+           android:id="@+id/imgcheckkitu"
+           android:layout_marginRight="5dp"/>
+       <TextView
+           android:id="@+id/txtcheckkitu"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="ít nhất 8 kí tự"
+           android:textColor="@color/mautext1"
+           />
+   </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="3dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/nopass"
+                android:id="@+id/imgcheckso"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/txtcheckso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ít nhất 1 chữ số"
+                android:textColor="@color/mautext1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="3dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/nopass"
+                android:id="@+id/imgcheckinhoa"
+                android:layout_marginRight="5dp"/>
+            <TextView
+                android:id="@+id/txtcheckinhoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ít nhất 1 chữ in hoa và chữ in thường"
+                android:textColor="@color/mautext1"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/chkSignup"
+                android:hint="@string/chao"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chinhsachlienquan"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/mautext1"
+                android:layout_marginBottom="3dp"/>
+        </LinearLayout>
         <Button
+            android:id="@+id/customSignupButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sign Up"/>
+            android:background="@drawable/btn_customxanhla"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Đăng kí"
+            android:textColor="#1E3A1E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            android:layout_marginTop="25dp"
+            android:foreground="?attr/selectableItemBackground"
+            />
     </LinearLayout>
 
 

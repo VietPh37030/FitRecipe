@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Authen.OtpScreen">
+    <!-- Logo -->
+    <TextView
+        android:id="@+id/txtLogo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tasktugas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"/>
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/txtTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Verification Code"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtSubtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We have sent a code to bimasp22@gmail.com"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <!-- OTP Input Fields -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/otp11"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/otp12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/otp13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/otp14"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:drawable/editbox_background"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <!-- Nút Verify -->
+    <Button
+        android:id="@+id/btnVerify1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Now"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:enabled="false"/>
+
+    <!-- Resend Code -->
+    <TextView
+        android:id="@+id/txtResendCode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didn’t receive any code? Resend Code"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

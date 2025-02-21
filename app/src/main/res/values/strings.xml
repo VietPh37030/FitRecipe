@@ -9,7 +9,6 @@
 </string>
 
 
-
     <string name="screen1">Chào mừng đến với FitRecipe</string>
     <string name="screen2">Khám phá Thực Đơn</string>
     <string name="screen3">Bắt Đầu Hành Trình</string>
@@ -18,4 +17,5 @@
     <string name="screen3desc">Theo dõi tiến trình và nhận gợi ý từ chuyên gia dinh dưỡng để cải thiện chất lượng cuộc sống.</string>
 
     <string name="startDesc">Bắt đầu hành trình ăn kiêng lành mạnh với FitRecipe: lên kế hoạch, lựa chọn thực đơn và theo dõi kết quả để đạt được sức khỏe tối ưu.</string>
+    <string name="chinhsachlienquan">Bằng việc đồng ý với các điều khoản và điều kiện, bạn đang tham gia vào một hợp đồng ràng buộc về mặt pháp lý với nhà cung cấp dịch vụ.</string>
 </resources>
